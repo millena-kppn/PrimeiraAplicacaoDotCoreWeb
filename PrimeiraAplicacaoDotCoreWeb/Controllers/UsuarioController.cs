@@ -12,5 +12,9 @@ namespace PrimeiraAplicacaoDotCoreWeb.Controllers
         {
             return View();
         }
+        public IActionResult PersistirUsuario(string nome, string sobrenome, string email)
+        {
+            return RedirectToAction("Index");
+        }
     }
 }
