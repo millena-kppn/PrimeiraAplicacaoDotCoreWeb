@@ -1,5 +1,32 @@
-﻿@{
+﻿@using PrimeiraAplicacaoDotCoreWeb.Models.Usuario
+@model List<Usuario>
+
+@{
     ViewData["Title"] = "Usuarios";
 }
 <h1>Usuarios</h1>
 <a class="btn btn-dark" asp-area="" asp-controller="Usuario" asp-action="NovoUsuario">Novo Usuario</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+		@foreach (var usuario in Model)
+		{
+			<tr>
+				<td>@usuario.Nome</td>
+				<td>@usuario.Sobrenome</td>
+				<td>@usuario.Email</td>
+			</tr>
+		})
+        <tr>
+        <td>Millena</td>
+        <td>Kappaun</td>
+        <td>MilleKpp@gmail.com</td>
+        </tr>
+    </tbody>
+</table>

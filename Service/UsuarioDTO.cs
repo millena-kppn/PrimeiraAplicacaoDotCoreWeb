@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    public class UsuarioDTO
+    public class UsuarioDTO// É uma classe para fazer referencia as minhas informações 
     {
         public int id;
         public string nome = string.Empty;
